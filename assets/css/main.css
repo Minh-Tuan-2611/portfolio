@@ -1,0 +1,473 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+.grid {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 16px;
+}
+
+.grid__column-2-4 {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 25%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+
+.header-infor {
+    display: flex;
+}
+
+.header-infor-item {
+    padding: 16px;
+}
+
+.header-infor-item:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.header-infor-item-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.header-search-icon {
+    padding: 17px;
+    cursor: pointer;
+}
+
+.header-search-icon:hover {
+    color: #fff;
+    background-color: rgb(253, 77, 13);
+}
+
+.slider {
+    background-image: url('..//assets/img/parallax1.jpeg');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #333;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    padding: 10px 24px;
+    letter-spacing: 10px;
+    z-index: 0;
+}
+
+.about {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.about-heading {
+    text-align: center;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.about-title {
+    text-align: center;
+    opacity: 0.5;
+    margin: 30px 0;
+}
+
+.about-paragraph1 {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.about-name {
+    display: flex;
+    position: relative;
+    top: 50px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.about-name-heading {
+    flex: 1;
+}
+
+.about-name-heading-name {
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: 0.5;
+}
+
+.about-name-heading-icon {
+    font-size: 12px;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+
+.about-name-heading-name-name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.about-name-heading-img {
+    width: 426px;
+    border-radius: 5px;
+}
+
+.about-name-heading-img:hover {
+    opacity: 0.6;
+}
+
+.about-name-paragraph {
+    flex: 1;
+    text-align: justify;
+    opacity: 0.6;
+    line-height: 1.8;
+}
+
+.infor {
+    position: relative;
+    top: 250px;
+    width: 950px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.infor-heading {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.infor-item-heading {
+    color: #777;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.infor-item-heading-title {
+    letter-spacing: 10px;
+    font-size: 15px;
+}
+
+.infor-item-heading-rate {
+    height: 35px;
+    background-color: #f1f1f1;
+}
+
+.infor-item-heading-rate-percent {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #616161;
+}
+
+.portfolio {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: space-around;
+    height: 130px;
+    align-items: center;
+    background-color: rgb(97, 97, 97);
+    color: #fff;
+}
+
+.portfolio-item-num {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.portfolio-item-title {
+    font-size: 15px;
+}
+
+.portfolio-img {
+    background-image: url('..//assets/img/parallax2.jpeg');
+    width: 100%;
+    background-attachment: scroll;
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 200px;
+}
+
+.portfolio-img-heading {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 7px;
+}
+
+.mywork {
+    position: relative;
+    top: 300px;
+}
+
+.mywork-heading {
+    text-align: center;
+    color: #777;
+}
+
+.mywork-title {
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #777;
+}
+
+.mywork-img-img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mywork-img-img:hover {
+    opacity: 0.6;
+}
+
+.mywork-btn {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.mywork-btn-btn {
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.mywork-btn-btn:hover {
+    background-color: #999;
+}
+
+.contact-img {
+    background-image: url('..//assets/img/parallax3.jpeg');
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    top: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-img-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    color: #fff;
+}
+
+.contact {
+    position: relative;
+    top: 400px;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.contact-heading-head {
+    text-align: center;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.8;
+    font-size: 23px;
+}
+
+.contact-title {
+    text-align: center;
+    margin: 16px 0;
+    color: #777;
+    font-size: 15px;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-content-map {
+    width: 33.33333%;
+}
+
+.contact-content-map-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-content-sub-infor {
+    width: 60%;
+}
+
+.contact-content-infor-item {
+    color: #777;
+    margin: 12px 0;
+}
+
+.contact-content-infor-local-icon {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.contact-content-title {
+    color: #777;
+    margin: 24px 0 18px 0;
+}
+
+.contact-content-form-infor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-content-form-infor-item {
+    width: 48%;
+    padding: 12px 8px;
+    font-size: 15px;
+}
+
+.contact-content-form-msg-msg {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 15px;
+    margin: 10px 0 16px 0;
+}
+
+.contact-content-form-btn-btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.contact-content-form-btn-btn:hover {
+    color: #000;
+    background-color: #ddd;
+}
+
+.footer {
+    position: relative;
+    top: 550px;
+    text-align: center;
+    background-color: #000;
+    opacity: 0.6;
+    line-height: 27px;
+    font-size: 15px;
+    padding: 64px 0;
+}
+
+.footer:hover {
+    opacity: 1;
+}
+
+.footer-btn-btn {
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #000;
+    padding: 12px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.footer-btn-btn:hover {
+    opacity: 1;
+    background-color: #999;
+}
+
+.footer-btn-icon {
+    margin-right: 12px;
+}
+
+.footer-apps {
+    margin-top: 30px;
+    color: #f1f1f1;
+    font-size: 22px;
+}
+
+.footer-apps-icon {
+    cursor: pointer;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-link-title {
+    color: #f1f1f1;
+}
+
+.footer-link-link {
+    color: #f1f1f1;
+    margin-left: 5px;
+}
